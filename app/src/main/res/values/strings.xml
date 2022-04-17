@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    TODO: searchbar placeholder -->
+    <string name="search_bar">Search by book name</string>
+    <!--    TODO: add book -->
+    <string name="addBook">Add Expenses</string>
+
+    <!--    drop down field -->
+    <string-array name="category">
+        <item>Food</item>
+        <item>Glossary</item>
+        <item>Stationery</item>
+        <item>Miscellaneous</item>
+    </string-array>
+</resources>
