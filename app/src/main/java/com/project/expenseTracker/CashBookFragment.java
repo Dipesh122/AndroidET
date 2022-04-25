@@ -1,5 +1,7 @@
 package com.project.expenseTracker;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -12,8 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,14 +29,9 @@ import java.util.ArrayList;
 
 public class CashBookFragment extends Fragment {
 
-   Button addBook;
-   Fragment fm = new ExpenseFormFragment();
+   private Button addBook;
 
-//   RecyclerView recyclerView;
-//   FirebaseDatabase db = FirebaseDatabase.getInstance();
-//   DatabaseReference databaseReference;
-//   MyAdapter myAdapter;
-//   ArrayList<IncomeAndExpense> list;
+
     public CashBookFragment() {
         // Required empty public constructor
     }
@@ -44,41 +43,28 @@ public class CashBookFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_cash_book, container, false);
         getActivity().setTitle("CashBook");
 
-//        recyclerView = view.findViewById(R.id.recycler);
-//        databaseReference = FirebaseDatabase.getInstance().getReference("Post");
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-//        list = new ArrayList<>();
-//        myAdapter = new MyAdapter(getActivity(),list);
-//        recyclerView.setAdapter(myAdapter);
-//        databaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                for (DataSnapshot dataSnapshot: snapshot.getChildren()){
-//                    IncomeAndExpense incomeAndExpense = dataSnapshot.getValue(IncomeAndExpense.class);
-//                    list.add(incomeAndExpense);
-//
-//                }
-//                myAdapter.notifyDataSetChanged();
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
 
         addBook = view.findViewById(R.id.addNewBook);
 
         addBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container,fm).commit();
+                showAddBookDialog();
             }
         });
 
-
         return view;
     }
+
+    private void showAddBookDialog() {
+        Dialog dialog = new Dialog(getActivity(),R.style.addBookAlterDialog);
+        dialog.setTitle("Add New Book");
+        dialog.setContentView(R.layout.add_new_bookpopup);
+        dialog.show();
+
+//        AddBookDialog addBookDialog = new AddBookDialog();
+//        addBookDialog.show(getActivity().getSupportFragmentManager(), "add book dialog");
+    }
+
 
 }

@@ -10,7 +10,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
-            android:layout_height="511dp"
+            android:layout_height="match_parent"
             android:layout_above="@+id/addNewBook"
             android:layout_below="@+id/addBook"
             android:layout_marginTop="27dp"
@@ -30,7 +30,6 @@
 
         <SearchView
             android:id="@+id/addBook"
-            android:hint="@string/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -38,6 +37,7 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/search_bar"
             android:gravity="center"
+            android:iconifiedByDefault="false"
             android:queryHint="@string/search_bar">
 
         </SearchView>

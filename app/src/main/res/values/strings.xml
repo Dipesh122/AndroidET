@@ -5,7 +5,7 @@
     <!--    TODO: searchbar placeholder -->
     <string name="search_bar">Search by book name</string>
     <!--    TODO: add book -->
-    <string name="addBook">Add Expenses</string>
+    <string name="addBook">Add Book</string>
 
     <!--    drop down field -->
     <string-array name="category">

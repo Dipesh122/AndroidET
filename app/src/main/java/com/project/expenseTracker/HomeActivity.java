@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     BottomNavigationView bottomNavigationView;
     CashBookFragment cashBookFragment= new CashBookFragment();
-    SettingFragment settingFragment= new SettingFragment();
+//    SettingFragment settingFragment= new SettingFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +51,9 @@ public class HomeActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.container,cashBookFragment).commit();
                         return true;
 
-                    case R.id.setting:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,settingFragment).commit();
-                        return true;
+//                    case R.id.setting:
+//                        getSupportFragmentManager().beginTransaction().replace(R.id.container,settingFragment).commit();
+//                        return true;
 
                 }
                 return false;
