@@ -20,6 +20,7 @@ public class IncomeAndExpensesActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         String title = extras.getString("bookName");
 
+
         setTitle(title);
     }
 }
