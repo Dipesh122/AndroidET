@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rename"
+        android:icon="@drawable/book_rename"
+        android:title="@string/rename"
+         />
+    <item
+        android:id="@+id/remove"
+        android:icon="@drawable/book_delete"
+        android:title="@string/delete"
+         />
+
+</menu>

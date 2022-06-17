@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".book.BookFragment">
+
+    <EditText
+        android:id="@+id/search_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_bar"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="4dp"
+        android:hint="Search by book name"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        android:layout_marginTop="63dp" />
+
+    <Button
+        android:id="@+id/addNewBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-66dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/button"
+        android:text="@string/addBook"
+        app:icon="@drawable/ic_add" />
+
+</RelativeLayout>

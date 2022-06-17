@@ -3,63 +3,90 @@ package com.project.expenseTracker;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+
 import android.content.Intent;
+
 import android.os.Bundle;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.project.expenseTracker.auth.LoginActivity;
+import com.project.expenseTracker.book.AddBookActivity;
+import com.project.expenseTracker.book.Book;
+import com.project.expenseTracker.book.BookAdapter;
+import com.project.expenseTracker.book.BookFragment;
+
+import com.project.expenseTracker.dbhelper.DBHelper;
+import com.project.expenseTracker.incomeandexpenses.IncomeFragment;
+
+import java.util.ArrayList;
+
+
 
 public class HomeActivity extends AppCompatActivity {
 
+    public static BookAdapter bookAdapter;
+    BottomNavigationView bottomNavigationView;
+    public static ArrayList<Book> bookArrayList;
+    DBHelper db;
+    public static String[] currencies = new String[]{"NPR", "$", "€", "INR"};
+
 //    Button btn_logout; for logout
     FirebaseAuth mAuth;
-    BottomNavigationView bottomNavigationView;
-    CashBookFragment cashBookFragment= new CashBookFragment();
-//    SettingFragment settingFragment= new SettingFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-//        btn_logout = findViewById(R.id.logout_btn); for logout
+        setTitle("Cashbooks");
         mAuth = FirebaseAuth.getInstance();
 
-
-
-
-//        bottom navigation view is initialize here
+        //initialization
+        replaceFragment(new BookFragment());
+        db = new DBHelper(this);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
-      getSupportFragmentManager().beginTransaction().replace(R.id.container, cashBookFragment).commit();
+//        add_book = findViewById(R.id.addNewBook);
+        bookArrayList = db.getAllBooks();
+        bookAdapter = new BookAdapter(bookArrayList);
 
+        //bottomNavigationView
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected( MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.c_book:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,cashBookFragment).commit();
-                        return true;
-
-//                    case R.id.setting:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.container,settingFragment).commit();
-//                        return true;
-
+                        replaceFragment(new BookFragment());
+                        break;
+//                     case R.id.help:
+//                         replaceFragment(new Fragment());
+//                        break;
+                    case R.id.setting:
+                        replaceFragment(new IncomeFragment());
+                        break;
                 }
-                return false;
+                return true;
             }
         });
 
+    }
+
+    //replacing fragment by each id
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container,fragment);
+        fragmentTransaction.commit();
     }
 
     @Override

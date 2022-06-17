@@ -10,10 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpenseTracker">
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
+            android:name=".incomeandexpenses.ExpensesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_expenses"
+            android:theme="@style/Theme.ExpenseTracker.NoActionBar"
+            android:parentActivityName=".incomeandexpenses.IncomeAndExpensesActivity"/>
         <activity
-            android:name=".LoginActivity"
+            android:name=".incomeandexpenses.IncomeAndExpensesActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".book.AddBookActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".auth.LoginActivity" />
+        <activity
+            android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

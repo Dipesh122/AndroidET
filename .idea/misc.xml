@@ -5,28 +5,48 @@
       <map>
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable-anydpi/ic_cashout.xml" value="0.141" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2165" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/book_delete.xml" value="0.129" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/book_icon.xml" value="0.182" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/book_rename.xml" value="0.1545" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/bookbutton.xml" value="0.1395" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/button.xml" value="0.1405" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/button2.xml" value="0.141" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/ic_add.xml" value="0.2165" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2165" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/ic_book.xml" value="0.19" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/ic_exit.xml" value="0.141" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/ic_help.xml" value="0.2165" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/ic_search.xml" value="0.1185" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/my_divider.xml" value="0.154" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/search_bar.xml" value="0.1" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/search_bar2.xml" value="0.156" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_add_book.xml" value="0.22" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_cash_books.xml" value="0.2" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_expense_and_income.xml" value="0.33" />
-        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_expenses.xml" value="0.22" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_income_and_expenses.xml" value="0.25" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/add_new_bookpopup.xml" value="0.22" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/addedexpenses_recycler.xml" value="0.33" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/content_expenses.xml" value="0.209375" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/custom_dialog_book.xml" value="0.18659420289855072" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/dropdown_item.xml" value="0.18659420289855072" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_add_new_book.xml" value="0.5" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_addcashentry_expense.xml" value="0.18659420289855072" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_book.xml" value="0.25" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_cash_book.xml" value="0.25" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_expense_form.xml" value="0.33" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_first.xml" value="0.209375" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_income.xml" value="0.25" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_setting.xml" value="0.2" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/rename_book.xml" value="0.22" />
         <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/setting_list.xml" value="0.20199275362318841" />
-        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/single_view_list.xml" value="0.18659420289855072" />
-        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/menu/bottom_menu.xml" value="0.209375" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/single_view_list.xml" value="0.25" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/menu/book_menu.xml" value="0.209375" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Dipesh/AndroidStudioProjects/ExpenseTracker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1595" />
       </map>
     </option>
   </component>
