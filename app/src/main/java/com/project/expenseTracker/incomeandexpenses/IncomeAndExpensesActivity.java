@@ -19,6 +19,7 @@ public class IncomeAndExpensesActivity extends AppCompatActivity {
         //getting intent from Income and expense activity
         Bundle extras = getIntent().getExtras();
         String title = extras.getString("bookName");
+
         setTitle(title);
     }
 }
